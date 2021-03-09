@@ -18,8 +18,14 @@ p {
     color: #222;
 }
 
+hr {
+    height: 1px;
+    background-color: #ebebeb;
+    border: none;
+}
 
-/*Navbar Section*/
+
+/* --- Navbar Section --- */
 
 #navbar {
     display: grid;
@@ -69,8 +75,6 @@ p {
     background: #1a73e8;
     border: 1px solid transparent;
     line-height: 16px;
-    margin-left: ;
-    margin-right: 30px;
     min-width: 96px;
     padding: 9px 23px;
     text-align: center;
@@ -79,9 +83,88 @@ p {
     border-radius: 4px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin-left: ;
+    margin-right: 30px;
 }
 #sign-in:hover {
     background: #2b7de9;
     webkit-box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
     box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);
+}
+
+
+/* --- Toolbar Section --- */
+
+#toolbar {
+    display: grid;
+    grid-template-columns: 193px 60px 84px 82px 99px 80px 60px 50px 50px 80px 1fr;
+    grid-template-rows: 35px;
+    grid-template-areas: 
+    ". all videos books shopping images more . settings tools .";
+    top: 50%;
+}
+
+#all {
+    grid-area: all;
+    justify-self: flex-start;
+    align-self: center;
+    color: #5f6368;
+    font-size: 13px;
+    padding-top: 8px;
+}
+#videos {
+    grid-area: videos;
+    justify-self: flex-start;
+    align-self: center;
+    color: #5f6368;
+    font-size: 13px;
+    padding-top: 8px;
+}
+#books {
+    grid-area: books;
+    justify-self: flex-start;
+    align-self: center;
+    color: #5f6368;
+    font-size: 13px;
+    padding-top: 8px;
+}
+#shopping {
+    grid-area: shopping;
+    justify-self: flex-start;
+    align-self: center;
+    color: #5f6368;
+    font-size: 13px;
+    padding-top: 8px;
+}
+#images {
+    grid-area: images;
+    justify-self: flex-start;
+    align-self: center;
+    color: #5f6368;
+    font-size: 13px;
+    padding-top: 8px;
+}
+#more {
+    grid-area: more;
+    justify-self: flex-start;
+    align-self: center;
+    color: #5f6368;
+    font-size: 13px;
+    padding-top: 8px;
+}
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+    color: #5f6368;
+    font-size: 13px;
+    padding-top: 8px;
+}
+#tools {
+    grid-area: tools;
+    justify-self: center;
+    align-self: center;
+    color: #5f6368;
+    font-size: 13px;
+    padding-top: 8px;
 }
